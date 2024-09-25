@@ -130,6 +130,12 @@ function resetGameboard () {
 function resetGameboardButton () {
     const resetButton = document.getElementById('reset');
     resetButton.addEventListener ('click', function() {
+        XR = 0;
+        OR = 0;
+        const XResults = document.getElementById('XResults');
+        const OResults = document.getElementById('OResults');
+        XResults.textContent = XR;
+        OResults.textContent = OR;
         const gameboard = drawGameboard();
         renderGameboard(gameboard);
         currentPlayer = 'X';

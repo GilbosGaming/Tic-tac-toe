@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+html {
+    background-color: rgb(152, 152, 255);
+    font-family: 'Sedgwick Ave';
+}
+
 .cell {
     width: 100px;
     height: 100px;
     border: 1px solid black;
     display: inline-block;
-    font-size: 24px;
+    font-size: 44px;
     text-align: center;
     line-height: 100px;
     cursor: pointer;
@@ -13,4 +20,32 @@
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
+    background-color: rgb(161, 110, 228);
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rescontainer p {
+    display: inline;
+    margin-right: 10px;
+    font-size: 25px;
+    
+}
+
+.rescontainer {
+    padding: 10vh;
+}
+
+.buttcontainer button {
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+    font-size: 20px;
 }
